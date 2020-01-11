@@ -28,10 +28,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <h4><b>Analista Desarrollador </b><br><b>Omar Ortiz</b></h4>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Experiencia</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Objetivo</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Contacto</a>
-    <a href="#formation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-graduate fa-fw w3-margin-right"></i>Formación</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i><b class="experience-title"></b></a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i><b class="about-title"></b></a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i><b class="contact-title"></b></a>
+    <a href="#formation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-graduate fa-fw w3-margin-right"></i><b class="education-title-short"></b></a>
   </div>
   
 </nav>
@@ -47,7 +47,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#"><img src="foto.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-		<h2><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b>Experiencia</b></h2>
+		<h2><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="experience-title">Experiencia</b></h2>
     </div>
   </header>
   <!-- Information about work experience-->
@@ -57,8 +57,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!--Personal objetive-->
  <div class="w3-container " id="about" style="margin-bottom:32px">
-    <h2><i class="fa fa-user fa-fw w3-margin-righ w3-text-teal"></i><b>Objetivo</b></h2>
+    <h2><i class="fa fa-user fa-fw w3-margin-righ w3-text-teal"></i><b class="about-title">Objetivo</b></h2>
 	<div class="w3-container w3-white">
+	<p><b>Objetivo:</b></p>
     <p>Pertenecer a una institución sólida y de confianza dentro del área de tecnologías de información en la cual me pueda desarrollar profesional y personalmente, adaptándome al trabajo con plena disposición para aprender y poner en práctica mis conocimientos adquiridos en beneficio de la organización.</p>
 	</div>
   </div>
@@ -66,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
  <!-- Contact Section -->
  
 <div class="w3-container  ">
-    <h2 id="contact"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-teal"></i><b>Contacto</b></h2>
+    <h2 id="contact"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-teal"></i><b class="contact-title">Contacto</b></h2>
     <div class="w3-container">
 	    <div class="w3-row-padding w3-center w3-padding-24 w3-white" style="margin:0 -16px">
 	      <div class="w3-quarter w3-dark-grey">
@@ -90,7 +91,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </div>
 
 <div class="w3-container ">
-    <h2 id="formation"><i class="fa fa-user-graduate fa-fw w3-margin-right w3-text-teal"></i><b>Formación y Certificaciones</b></h2>
+    <h2 id="formation"><i class="fa fa-user-graduate fa-fw w3-margin-right w3-text-teal"></i><b class="education-title">Formación y Certificaciones</b></h2>
     <div class="w3-container" >
 	    <div class="w3-row-padding w3-padding-20 w3-white" style="margin:0 -16px">
 	      
@@ -136,9 +137,15 @@ function w3_close() {
 
 
 var html = translate().print_job("spanish");
-
+var titles = translate().config_lang("spanish").titles;
 $('#job-information').html(html);
 
+
+$('.experience-title').html(titles.experience);
+$('.about-title').html(titles.about);
+$('.contact-title').html(titles.contact);
+$('.education-title').html(titles.education);
+$('.education-title-short').html(titles.education_short);
 
 </script>
 

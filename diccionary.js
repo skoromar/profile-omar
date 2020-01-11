@@ -3,7 +3,14 @@ function translate(option) {
 		config_lang: function(option){
 			var information_language = {
 				spanish:{
-					jobs:[
+					titles:{
+						experience:"Experiencia",
+						about:"Sobre Mi",
+						contact:"Contacto",
+						education:"Formación y Certificaciones",
+						education_short:"Formación"
+					}
+					,jobs:[
 						{
 							title:"Full Stack Developer Netsuite / OFI.COM",
 							date_start:"2017",
@@ -54,7 +61,7 @@ function translate(option) {
 			   				+'<h5 class="w3-opacity"><b>'+information_profile.jobs[x].title+' </b></h5>'
 	  						+'<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>'+information_profile.jobs[x].date_start+' - '+(information_profile.jobs[x].date_end=='Actual'?'<span class="w3-tag w3-teal w3-round">Actual</span></h6>':information_profile.jobs[x].date_end+'</h6>')
 							+'<p>'+information_profile.jobs[x].description+'</p>'
-							+(x == information_profile.jobs.length-1?'':'<hr>')
+							+(x == information_profile.jobs.length-1?'<br>':'<hr>')
 							+'</div>';
 			}
 
