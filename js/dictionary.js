@@ -66,6 +66,7 @@ function translate(option) {
 			}
 
 			return html_job;
+			
 		} 
 
 
