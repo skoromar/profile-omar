@@ -15,13 +15,13 @@ function translate(option) {
 							title:"Full Stack Developer Netsuite / OFI.COM",
 							date_start:"2017",
 							date_end:"Actual",
-							description:"Análisis y desarrollo de nuevos módulos e integraciones para optimizar los procesos de la empresa adaptando el ERP Netsuite y el e-commerce para mejorar la calidad del servicio. Utilizando herramientas como Vinson, Backbone, NODE, Express, MongoDB, Amazon Web Services, Gulp."
+							description:"Arquitectura y desarrollo de nuevos módulos e integraciones para optimizar los procesos de la empresa adaptando el CRM Netsuite y el e-commerce para mejorar la calidad del servicio. Utilizando herramientas de programación de Netsuite así como Javascript, Backbone, NODE, Express, MongoDB, Amazon Web Services, Gulp, Code Commit, MySql y GIT."
 						}
 						,{
 							title:"Analista Desarrollador / Ahorra seguros ",
 							date_start:"2016",
 							date_end:"2017",
-							description:"Análisis y desarrollo de sistemas e-commerce y gestores de diseño, en el sector de seguros vehiculares integrando proveedores de información implementado en JAVA, Hibernate, JSF Prime Faces, Mysql."
+							description:"Análisis y desarrollo de sistemas e-commerce y gestores de diseño, en el sector de seguros vehiculares integrando proveedores de información implementado en Java, Hibernate, JSF Prime Faces, Mysql."
 						}
 						,{
 							title:"Desarrollador IT / DGI Autosystems",
@@ -39,7 +39,7 @@ function translate(option) {
 							title:"Programador / Benkio Comunicaciones ",
 							date_start:"2014",
 							date_end:"2015",
-							description:"Desarrollo de e-commerce y aplicaciones móviles  implementados en PHP, Mysql, HTML,CSS, Javascript, JAVA y SQLite."
+							description:"Desarrollo de e-commerce y aplicaciones móviles  implementados en PHP, Mysql, HTML,CSS, Javascript, Java, Android, Phonegap y SQLite."
 						}
 					]
 				}
