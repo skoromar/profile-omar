@@ -11,6 +11,9 @@
 	<script src='js/a076d05399.js'></script>
 	<style>
 	body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+	.dropdown-whidth{
+		min-width: 96px !important;
+	}
 	</style>
 	<script src="js/jquery.min.js"></script>
 	<script src='js/dictionary.js'></script>
@@ -21,7 +24,7 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right  w3-padding w3-hover-grey" title="close menu">
       <i class="fa faa-remove"></i>
     </a>
     <img src="foto.jpeg" style="width:100%;" class="w3-round"><br><br>
@@ -32,7 +35,7 @@
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i><b class="about-title"></b></a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i><b class="contact-title"></b></a>
     <a href="#formation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-graduate fa-fw w3-margin-right"></i><b class="education-title-short"></b></a>
-    <a href="OmarOrtiz.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-file-pdf fa-fw w3-margin-right"></i><b class="cv-file">Obtener CV</b></a>
+    <a href="OmarOrtiz.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-file-pdf fa-fw w3-margin-right"></i><b class="cv-file"></b></a>
   </div>
   
 </nav>
@@ -47,21 +50,30 @@
   <header id="portfolio">
     <a href="#"><img src="foto.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-dropdown-click w3-right">
+   		<button onclick="myFunction()" class="w3-button w3-black language">hola</button>
+	    <div id="dropdown-function" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom dropdown-whidth">
+	      <a class="w3-bar-item w3-button es-language">Español</a>
+	      <a  class="w3-bar-item w3-button en-language">Inglés</a>
+	    </div>
+  </div>
+     
+
     <div class="w3-container">
 		<h2><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="experience-title">Experiencia</b></h2>
     </div>
+
   </header>
   <!-- Information about work experience-->
   <div class="w3-container" id="job-information">
-	
   </div>
 
   <!--Personal objetive-->
  <div class="w3-container " id="about" style="margin-bottom:32px">
     <h2><i class="fa fa-user fa-fw w3-margin-righ w3-text-teal"></i><b class="about-title">Objetivo</b></h2>
 	<div class="w3-container w3-white">
-	<p><b>Objetivo:</b></p>
-    <p>Pertenecer a una institución sólida y de confianza dentro del área de tecnologías de información en la cual me pueda desarrollar profesional y personalmente, adaptándome al trabajo con plena disposición para aprender y poner en práctica mis conocimientos adquiridos en beneficio de la organización.</p>
+	<p><b class="objetive"></b></p>
+    <p class="objetive-information"></p>
 	</div>
   </div>
 
@@ -137,17 +149,29 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
+function myFunction() {
+  var x = $("#dropdown-function").attr('class'); 
+  if (x.indexOf("w3-show") == -1) {
+    $("#dropdown-function").addClass("w3-show");
+  } else { 
+    $("#dropdown-function").removeClass("w3-show");
+  }
+}
 
-var html = translate().print_job("spanish");
-var titles = translate().config_lang("spanish").titles;
-$('#job-information').html(html);
+$(".es-language").click(function(){
+	translate().set_lang("spanish");
+	$("#dropdown-function").removeClass("w3-show")
+})
 
 
-$('.experience-title').html(titles.experience);
-$('.about-title').html(titles.about);
-$('.contact-title').html(titles.contact);
-$('.education-title').html(titles.education);
-$('.education-title-short').html(titles.education_short);
+$(".en-language").click(function(){
+	translate().set_lang("english");
+	$("#dropdown-function").removeClass("w3-show")
+})
+
+translate().set_lang("spanish");
+
+
 
 </script>
 
