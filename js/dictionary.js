@@ -56,7 +56,7 @@ function translate(option) {
 						education:"Education and Certifications",
 						education_short:"Education",
 						objetive:"Objetive:",
-						get_cv:"Get CV",
+						get_cv:"Get Resume",
 						language:"Language"
 					}
 					,objetive:"Belonging to a solid and trustworthy institution within the area of ​​information technologies in which I can develop professionally and personally, adapting work with full willingness to learn and put into practice my knowledge acquired for the benefit of the organization."
