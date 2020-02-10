@@ -11,7 +11,8 @@ function translate(option) {
 						education_short:"Formación",
 						objetive:"Objetivo:",
 						get_cv:"Obtener CV",
-						language: "Lenguaje"
+						language: "Lenguaje",
+						file:"OmarOrtiz.pdf"
 					}
 					,objetive:"Pertenecer a una institución sólida y de confianza dentro del área de tecnologías de información en la cual me pueda desarrollar profesional y personalmente, adaptándome al trabajo con plena disposición para aprender y poner en práctica mis conocimientos adquiridos en beneficio de la organización."
 					,jobs:[
@@ -57,7 +58,8 @@ function translate(option) {
 						education_short:"Education",
 						objetive:"Objetive:",
 						get_cv:"Get Resume",
-						language:"Language"
+						language:"Language",
+						file:"OmarOrtizResume2020.pdf"
 					}
 					,objetive:"Belonging to a solid and trustworthy institution within the area of ​​information technologies in which I can develop professionally and personally, adapting work with full willingness to learn and put into practice my knowledge acquired for the benefit of the organization."
 					,jobs:[
@@ -131,6 +133,7 @@ function translate(option) {
 			$('.objetive-information').html(objetive);
 			$('.cv-file').html(titles.get_cv);
 			$('.language').html(titles.language);
+			$("#resume-pdf").attr("href", titles.file);
 		}
 
 
