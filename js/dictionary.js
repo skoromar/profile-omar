@@ -71,7 +71,7 @@ function translate(option) {
 							title:"Analyst developer / Ahorra seguros ",
 							date_start:"2016",
 							date_end:"2017",
-							description:"Analysis and development of e-commerce systems and design managers in the vehicle insurance sector integrating information providers implemented in Java, Hibernate, JSF Prime Faces, Mysql."
+							description:"E-commerce systems analysis development and design managers in the vehicle insurance sector integrating information providers implemented in Java, Hibernate, JSF Prime Faces, Mysql."
 						}
 						,{
 							title:"Developer IT / DGI Autosystems",
