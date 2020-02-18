@@ -87,7 +87,7 @@
 	    </div>
 	</div>
 	<!-- Information about work experience-->
-    <div class="w3-container">
+    <div class="w3-container w3-animate-zoom">
 		<h2 id="portfolio"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="experience-title">Experiencia</b></h2>
     </div>
 	<div class="w3-container" id="job-information">
@@ -145,6 +145,7 @@ function w3_close() {
 function showDropdown() {
   $("#about").removeClass("w3-animate-zoom")
   $('#contact-section').removeClass("w3-animate-zoom");
+  $('#portfolio').removeClass("w3-animate-zoom");
   var x = $("#dropdown-function").attr('class'); 
   if (x.indexOf("w3-show") == -1) {
     $("#dropdown-function").addClass("w3-show");
@@ -156,7 +157,8 @@ function showDropdown() {
 $(".es-language").click(function(){
 	translate().set_lang("spanish");
 	$("#dropdown-function").removeClass("w3-show");
-	$("#about").addClass("w3-animate-zoom")
+	$("#about").addClass("w3-animate-zoom");
+	$("#portfolio").addClass("w3-animate-zoom");
   $('#contact-section').addClass("w3-animate-zoom");
 })
 
@@ -164,8 +166,9 @@ $(".es-language").click(function(){
 $(".en-language").click(function(){
 	translate().set_lang("english");
 	$("#dropdown-function").removeClass("w3-show");
-	$("#about").addClass("w3-animate-zoom")
-  $('#contact-section').addClass("w3-animate-zoom");
+	$("#about").addClass("w3-animate-zoom");
+	$("#portfolio").addClass("w3-animate-zoom");
+  	$('#contact-section').addClass("w3-animate-zoom");
 
 })
 
