@@ -25,11 +25,11 @@
     <h4><b>Analista Desarrollador </b><br><b>Omar Ortiz</b></h4>
   </div>
   <div class="w3-bar-block">
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i><b class="about-title"></b></a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i><b class="contact-title"></b></a>
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i><b class="experience-title"></b></a> 
-    <a href="#formation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-graduate fa-fw w3-margin-right"></i><b class="education-title-short"></b></a>
-    <a href="OmarOrtiz.pdf" id="resume-pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-file-pdf fa-fw w3-margin-right"></i><b class="cv-file"></b></a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding color-menu"><i class="fa fa-user fa-fw w3-margin-right"></i><b class="about-title"></b></a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding color-menu"><i class="fa fa-envelope fa-fw w3-margin-right"></i><b class="contact-title"></b></a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding color-menu"><i class="fa fa-th-large fa-fw w3-margin-right"></i><b class="experience-title"></b></a> 
+    <a href="#formation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding color-menu"><i class="fa fa-user-graduate fa-fw w3-margin-right"></i><b class="education-title-short"></b></a>
+    <a target="_blank" href="OmarOrtiz.pdf" id="resume-pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-file-pdf fa-fw w3-margin-right"></i><b class="cv-file"></b></a>
   </div>
   
 </nav>
@@ -88,7 +88,7 @@
 	</div>
 	<!-- Information about work experience-->
     <div class="w3-container">
-		<h2><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="experience-title">Experiencia</b></h2>
+		<h2 id="portfolio"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="experience-title">Experiencia</b></h2>
     </div>
 	<div class="w3-container" id="job-information">
 	</div>
@@ -171,6 +171,11 @@ $(".en-language").click(function(){
 
 translate().set_lang("spanish");
 
+$(".color-menu").click(function(){
+	$(".color-menu").removeClass('w3-text-teal');
+	this.classList.add("w3-text-teal")
+
+})
 
 </script>
 
