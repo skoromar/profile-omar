@@ -10,12 +10,12 @@ function translate(option) {
 						education:"Formación y Certificaciones",
 						education_short:"Formación",
 						objetive:"Objetivo:",
-						get_cv:"Obtener CV",
+						get_cv:"Descargar CV",
 						language: "Lenguaje",
 						file:"OmarOrtiz.pdf",
 						education_school:"Ingeniería en sistemas computacionales"
 					}
-					,objetive:"Pertenecer a una institución sólida y de confianza dentro del área de tecnologías de información en la cual me pueda desarrollar profesional y personalmente, adaptándome al trabajo con plena disposición para aprender y poner en práctica mis conocimientos adquiridos en beneficio de la organización."
+					,objetive:"Actualmente me desempeño como líder de desarrollo Netsuite, me encuentro certificado como Scrum Master y me encargo de realizar la arquitectura de los módulos y procesos necesarios para la implementación de los requerimientos, utilizando las mejores prácticas a nivel programación para brindar el mejor resultado para los clientes y las diferentes áreas de la compañía, mi objetivo es pertenecer a una institución sólida y de confianza dentro del área de tecnologías de información en la cual me pueda desarrollar profesional y personalmente, adaptándome al trabajo con plena disposición para aprender y poner en práctica mis conocimientos adquiridos en beneficio de la organización."
 					,jobs:[
 						{
 							title:"Full Stack Developer Netsuite / OFI.COM",
@@ -58,12 +58,12 @@ function translate(option) {
 						education:"Education and Certifications",
 						education_short:"Education",
 						objetive:"Objetive:",
-						get_cv:"Get Resume",
+						get_cv:"Download Resume",
 						language:"Language",
 						file:"OmarOrtizResume2020.pdf",
 						education_school:"Computerstystems Engineer"
 					}
-					,objetive:"Belonging to a solid and trustworthy institution within the area of ​​information technologies in which I can develop professionally and personally, adapting work with full willingness to learn and put into practice my knowledge acquired for the benefit of the organization."
+					,objetive:"I currently work as a Netsuite development leader, I am certified as a Scrum Master and I am in charge of carrying out the architecture of the modules and processes necessary for the implementation of the requirements, using the best practices of a programming level to provide the best result for the clients and the different areas of the company, my objective is to belong to a solid and trustworthy institution within the area of ​​information technologies in which I can develop professionally and personally, adapting the work with full disposition to learn and put into practice My knowledge acquired for the benefit of the organization."
 					,jobs:[
 						{
 							title:"Full Stack Developer Netsuite / OFI.COM",
@@ -119,24 +119,26 @@ function translate(option) {
 			
 		}
 		, set_lang: function(option){
+
 			var html = translate().print_job(option);
 			var info_diccionary_arr = translate().config_lang(option);
 			var titles = info_diccionary_arr.titles;
 			var objetive = info_diccionary_arr.objetive;
+
+
+			$('.objetive').html(titles.objetive);
+			$('.objetive-information').html(objetive);
 			$('#job-information').html(html);
-
-
 			$('.experience-title').html(titles.experience);
 			$('.about-title').html(titles.about);
 			$('.contact-title').html(titles.contact);
 			$('.education-title').html(titles.education);
 			$('.education-title-short').html(titles.education_short);
-			$('.objetive').html(titles.objetive);
-			$('.objetive-information').html(objetive);
 			$('.cv-file').html(titles.get_cv);
 			$('.language').html(titles.language);
 			$("#resume-pdf").attr("href", titles.file);
 			$(".education_school").html(titles.education_school);
+			
 		}
 
 
