@@ -18,9 +18,15 @@ function translate(option) {
 					,objetive:"Actualmente me desempeño como líder de desarrollo Netsuite, me encuentro certificado como Scrum Master y me encargo de realizar la arquitectura de los módulos y procesos necesarios para la implementación de los requerimientos, utilizando las mejores prácticas a nivel programación para brindar el mejor resultado para los clientes y las diferentes áreas de la compañía, mi objetivo es pertenecer a una institución sólida y de confianza dentro del área de tecnologías de información en la cual me pueda desarrollar profesional y personalmente, adaptándome al trabajo con plena disposición para aprender y poner en práctica mis conocimientos adquiridos en beneficio de la organización."
 					,jobs:[
 						{
+							title:"Senior Software Developer Netsuite / Kavak",
+							date_start:"2020",
+							date_end:"Actual",
+							description:"Administración, análisis y arquitectura de modulos e integraciones back-end en ERP Netsuite, optimizando procesos y modulos para mejorar el funcionamiento de la empresa."
+						},
+						{
 							title:"Full Stack Developer Netsuite / OFI.COM",
 							date_start:"2017",
-							date_end:"Actual",
+							date_end:"2020",
 							description:"Arquitectura y desarrollo de nuevos módulos e integraciones para optimizar los procesos de la empresa adaptando el CRM Netsuite y el e-commerce para mejorar la calidad del servicio. Utilizando herramientas de programación de Netsuite así como Javascript, Backbone, NODE, Express, MongoDB, Amazon Web Services, Gulp, Code Commit, MySql y GIT."
 						}
 						,{
@@ -66,9 +72,15 @@ function translate(option) {
 					,objetive:"I currently work as a Netsuite development leader, I am certified as a Scrum Master and I am in charge of carrying out the architecture of the modules and processes necessary for the implementation of the requirements, using the best practices of a programming level to provide the best result for the clients and the different areas of the company, my objective is to belong to a solid and trustworthy institution within the area of ​​information technologies in which I can develop professionally and personally, adapting the work with full disposition to learn and put into practice My knowledge acquired for the benefit of the organization."
 					,jobs:[
 						{
+							title:"Senior Software Developer Netsuite / Kavak",
+							date_start:"2020",
+							date_end:"Current",
+							description:"Administration, analysis and architecture of modules and back-end integrations in ERP Netsuite, optimizing processes and modules to improve the operation of the company."
+						},
+						{
 							title:"Full Stack Developer Netsuite / OFI.COM",
 							date_start:"2017",
-							date_end:"Current",
+							date_end:"2020",
 							description:"Architecture and development of new modules and integrations for the company's processes adapting the Netsuite CRM and e-commerce to improve service quality. Using Netsuite programming tools as well as Javascript, Backbone, NODE, Express, MongoDB, Amazon Web Services, Gulp, Code Commit, MySql and GIT."
 						}
 						,{
