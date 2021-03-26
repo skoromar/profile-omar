@@ -21,7 +21,7 @@ function translate(option) {
 							title:"Senior Software Developer Netsuite / Kavak",
 							date_start:"2020",
 							date_end:"Actual",
-							description:"Administración, análisis y arquitectura de modulos e integraciones back-end en ERP Netsuite, optimizando procesos y modulos para mejorar el funcionamiento de la empresa."
+							description:"Administración, análisis y arquitectura de módulos e integraciones back-end en ERP Netsuite, optimizando procesos y módulos para mejorar el funcionamiento de la empresa."
 						},
 						{
 							title:"Full Stack Developer Netsuite / OFI.COM",
